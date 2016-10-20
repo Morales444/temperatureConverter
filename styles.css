@@ -1,0 +1,12 @@
+div {
+    width: 300px;
+    border: 25px solid #1a5d80;
+    padding: 25px;
+    margin-left: 33em;
+    margin-top: 15em;
+    background-color: white;
+}
+body {
+    background-image: url("img/Cold-thermometer.gif");
+    background-color: #cccccc;
+}
