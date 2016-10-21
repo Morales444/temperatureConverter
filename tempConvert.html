@@ -14,7 +14,7 @@
            id="Celsius"
            name="Celsius"
            placeholder="Start typing"
-           onkeyup=""
+           onkeyup="Convert('Celsius')"
     >
     <label>degrees Celsius</label>
     <br>
@@ -28,11 +28,25 @@
            id="Fahrenheit"
            name="Fahrenheit"
            placeholder="Start typing"
-           onkeyup=""
+           onkeyup="Convert('Fahrenheit')"
     >
     <label>degrees Fahrenheit</label>
     <br>
+    <script>
 
+        function Convert(degree) {
+            var T;
+            if (degree == "Celsius") {
+                T = document.getElementById("Celsius").value * 9 / 5 + 32;
+                document.getElementById("Fahrenheit").value = Math.round(T);
+            } else {
+                T = (document.getElementById("Fahrenheit").value -32) * 5 / 9;
+                document.getElementById("Celsius").value = Math.round(T);
+            }
+        }
+
+
+    </script>
 
 
 </form>
