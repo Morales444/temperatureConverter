@@ -32,8 +32,10 @@
     >
     <label>degrees Fahrenheit</label>
     <br>
-    <script>
 
+</form>
+    <script>
+        try {
         function Convert(degree) {
             var T;
             if (degree == "Celsius") {
@@ -44,12 +46,11 @@
                 document.getElementById("Celsius").value = Math.round(T);
             }
         }
-
-
+        }
+        catch (err) {
+            alert("Try again")
+        }
     </script>
-
-
-</form>
 </div>
 </body>
 </html>
